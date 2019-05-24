@@ -1,0 +1,68 @@
+if((g_cnt>=0 && g_cnt<=5 || (g_cnt>=12 && g_cnt<=17) || (g_cnt>=525 && g_cnt<=530) || (g_cnt>=537 && g_cnt<=542)) {
+  EQ
+}else if((g_cnt>=6 && g_cnt<=11) || (g_cnt>=531 && g_cnt<=536)) {
+  VS
+}else if(g_cnt==524) {
+  H1
+}else if(g_cnt==543) {
+  H2
+}else {
+  HS
+}
+EQ   0 -   5
+VS   6 -  11
+EQ  12 -  17
+HS  18 - 523 270
+H1 524
+EQ 525 - 530
+VS 531 - 536
+EQ 537 - 542
+H2 543
+HS 544 - 1049
+
+// 初期
+if(d_flag!=0){
+  draw();
+  d_flag=0;
+}
+if((g_cnt>=18 && g_cnt<=270) || g_cnt>=291){
+    ICR1 = HS_DOWN;
+    OCR1A = HS_UP;
+    if(g_cnt >= 50 && g_cnt<= 200)
+      d_flag=1;
+    else if(g_cnt >= 323 && g_cnt<= 473)
+      d_flag=1;
+}else if((g_cnt>=6 && g_cnt<=11) || (g_cnt>=278 && g_cnt<=283)) {
+    ICR1 = VS_DOWN;
+    OCR1A = VS_UP;    
+}else if(g_cnt==271) {
+    ICR1 = VS_DOWN;
+    OCR1A = HS_UP;
+}else if(g_cnt==290) {
+    ICR1 = VS_DOWN;
+    OCR1A = 0;
+}else {
+    ICR1 = EQ_DOWN;
+    OCR1A = EQ_UP;
+}
+  g_cnt++;
+  g_cnt = g_cnt % 544;
+
+
+//第二版
+if(next == g_cnt){
+    OCR1A = up_tbl[tbl_cnt];
+    ICR1 = down_tbl[tbl_cnt];
+    tbl_cnt++;
+    tbl_cnt = tbl_cnt % 10;
+    next = sync_tbl[tbl_cnt];
+}
+if(ICR1 == HS_DOWN){
+  if(g_cnt<=200 && g_cnt>=100)
+    draw();
+ // if(g_cnt<=473 && g_cnt>=373)
+ //   draw();
+}
+
+  g_cnt++;
+  g_cnt = g_cnt % 544;
