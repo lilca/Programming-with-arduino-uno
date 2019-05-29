@@ -55,16 +55,16 @@ GND o-----|               |        |                |
 
 # 参考文献
 
-[(1): 7. メーカー純正リモコンのコードー赤外線リモコンの信号定義データの合成 1.3.1 ドキュメント](http://shrkn65.nobody.jp/remocon/database.html)
+(1): [7. メーカー純正リモコンのコードー赤外線リモコンの信号定義データの合成 1.3.1 ドキュメント](http://shrkn65.nobody.jp/remocon/database.html)
 
-[(2): AQUOSリモコンの信号解析をしましたースイッチ工作室](https://ameblo.jp/ohanashi555/entry-11882737031.html)
+(2): [AQUOSリモコンの信号解析をしましたースイッチ工作室](https://ameblo.jp/ohanashi555/entry-11882737031.html)
 
-[(3): REGZAのリモコンコード解析(CT-90352)](http://www.gatelink.co.jp/hw/etc/regzaremo/index.html)
+(3): [REGZAのリモコンコード解析(CT-90352)](http://www.gatelink.co.jp/hw/etc/regzaremo/index.html)
 
-[(4): 赤外線リモコンの通信フォーマット](http://elm-chan.org/docs/ir_format.html)
+(4): [赤外線リモコンの通信フォーマット](http://elm-chan.org/docs/ir_format.html)
 
-[(5): 赤外線リモコンー東工大おやぢ](https://ameblo.jp/aoijf2/entry-11261684880.html)
+(5): [赤外線リモコンー東工大おやぢ](https://ameblo.jp/aoijf2/entry-11261684880.html)
 
-[(6): 真夏のArduinoーヨンマルキュー](https://4009.jp/post/2016-08-23-summer/)
+(6): [真夏のArduinoーヨンマルキュー](https://4009.jp/post/2016-08-23-summer/)
 
-[(7): 安直に赤外線回路を作る](https://qiita.com/nanbuwks/items/57e6a6112d0459ca7810)
+(7): [安直に赤外線回路を作る](https://qiita.com/nanbuwks/items/57e6a6112d0459ca7810)
