@@ -1,0 +1,2 @@
+charactors 24x24 = 576byte
+charactor size 8x8 = 64bits = 8byte
