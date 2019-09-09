@@ -1,0 +1,5 @@
+0-2 Vertical Sync (all)
+3-40 Horizontal Sync (4.7us) + High(rest)
+41-232 Horizontal Sync (4.7us) + Video Signal(rest)
+233-263 Horizontal Sync (4.7us) + High(rest)
+
